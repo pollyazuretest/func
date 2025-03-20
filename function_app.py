@@ -1,5 +1,7 @@
 import azure.functions as func
 import logging
+from azure.keyvault.secrets import SecretClient
+from azure.identity import DefaultAzureCredential
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
